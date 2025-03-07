@@ -2,6 +2,12 @@ S:
   - name: "Outer Wilds"
     image: "/assets/img/covers/outer_wilds.jpg"
     link: "./posts/Outer_Wilds"
+    desc: "A knowledge-based puzzle game - any spoilers can ruin the experience PERMANENTLY.\n
+    Helped me abstract the concept of death.\n
+    10/10"
+  - name: "Hyper Light Drifter"
+    image: "/assets/img/covers/hyper_light_drifter.jpg"
+    link: "./posts/Hyper_Light_Drifter"
 
 A:
 
@@ -10,3 +16,7 @@ B:
 C:
 
 D:
+
+E:
+
+F:

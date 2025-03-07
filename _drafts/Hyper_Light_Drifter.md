@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hyper Light Drifter :: Moribundity :: Death without a Meaning"
+title: "Hyper Light Drifter :: Moribundity :: The Concept of Life"
 toc: true
 tags: [death]
 categories: [game, essay]
@@ -14,7 +14,7 @@ I first heard about Hyper Light Drifter when it released, but didn't give it muc
 
 There isn't much to say about Hyper Light Drifter, design-wise. It's a very simple combination of "the game isn't telling you anything, figure it out yourself" and "there are secrets everywhere", two pretty popular tropes in this kind of indie game. Hyper Light Drifter pushes this to the extreme, but it's still a pretty simple loop : find secrets, get rewards, upgrade gear, etc...
 
-The game really captivated me with it's environmental storytelling. The characters (and the entire game, more generally), forgo dialogue entirely, speaking only in few pictures. Every detail of the story, every information on each area, is only given to the player by the environment. Hyper Light Drifter falls in the category of "Wake up in a ruined world" games (like "Zelda : Breath of the Wild", "Drehmal", or even "Hollow Knight" (sort of) )
+The game really captivated me with it's environmental storytelling. The characters (and the entire game, more generally), forgo dialogue entirely, speaking only in few pictures. Every detail of the story, every information on each area, is only given to the player by the environment. Hyper Light Drifter falls in the category of "Wake up in a ruined world" games (like "Zelda : Breath of the Wild", "Drehmal:Primordial", or even "Hollow Knight" (sort of) )
 
 ## Meaning behind the game
 

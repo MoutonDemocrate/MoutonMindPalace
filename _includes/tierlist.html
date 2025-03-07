@@ -1,19 +1,104 @@
-<div class="tier-list">
-  {% assign tiers = "S,A,B,C,D" | split: "," %}
-  {% assign tier_colors = "S|#ff4d00,A|#ff9900,B|#ffee00,C|#3399ff,D|#888888" | split: "," %}
+<style>
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 120%; /* Positions tooltip above */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: normal;
+    opacity: 0;
+    width: 200px; /* Adjust width for better formatting */
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip-text strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .tooltip-text p {
+    font-size: 12px;
+    margin: 0;
+  }
+</style>
+
+<h2>Tierlist!</h2>
+
+<div class="tier-list" style="border-radius: 10px; padding: 10px; background-color: black;">
+  {% assign tiers = "S,A,B,C,D,E,F" | split: "," %}
+  {% assign tier_colors = "S|#00FF88,A|#9c01ec,B|#6e02a4,C|#360151,D|#230035,E|#13001d,F|#000000" | split: "," %}
+  {% assign label_color = "S|#000000,A|#FFFFFF,B|#FFFFFF,C|#FFFFFF,D|#FFFFFF,E|#FFFFFF,F|#FFFFFF" | split: "," %}
   {% assign tier_list = site.data.tier_list %}
   {% for tier in tiers %}
-    {% assign color = tier_colors | where_exp: "item", "item contains tier" | first | split: "|" | last %}
+    {% assign color = "" %}
+    {% for pair in tier_colors %}
+      {% assign key_value = pair | split: "|" %}
+      {% if key_value[0] == tier %}
+        {% assign color = key_value[1] %}
+      {% endif %}
+    {% endfor %}
     <div class="tier {{ tier }}" style="display: flex; align-items: center; padding: 10px; font-size: 24px; font-weight: bold; text-transform: uppercase; border-radius: 5px; background-color: {{ color }};">
-      <div class="tier-label" style="width: 50px; text-align: center; padding: 10px; margin-right: 10px; color: white;">
+      {% assign label_col = label_color | where_exp: "item", "item contains tier" | first | split: "|" | last %}
+      <div class="tier-label" style="width: 50px; text-align: center; padding: 10px; margin-right: 10px; color: {{ label_col }};">
         {{ tier }}
       </div>
-      <div class="tier-items" style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px;">
+      <div class="tier-items" style="display: flex; align-content: space-evenly; flex-wrap: wrap; align-items: center; border-radius: 5px; gap: 5px; padding: 10px; background-color: #000000;flex-grow: 1; width: 100%;">
         {% for item in tier_list[tier] %}
-          <a href="{{ item.link }}" style="display: flex; align-items: center;">
-            <img src="{{ item.image }}" alt="{{ item.name }}" 
-                 style="max-height: 150px !important; width: auto !important; height: auto !important; display: block !important; object-fit: contain !important; border-radius: 5px !important; border: 2px solid white !important; margin: 0 !important; padding: 0 !important; vertical-align: middle !important;" />
+          {% comment %} <a href="{{ item.link }}" class="tooltip-container" style="position: relative;display: inline-block; align-items: center; border: 2px solid {{ color }}; border-radius: 5px ;">
+            <img src="{{ item.image }}" alt="{{ item.name }}"
+                style="max-height: 100px; 
+                  width: auto ; height: auto ; display: block ; object-fit: contain ; margin: 0px ; padding: 0 ; vertical-align: middle ;" />
+            <span class="tooltip-text">{{ item.name }}</span>
+          </a> {% endcomment %}
+          <a href="{{ item.link }}" class="tooltip-container">
+            <img src="{{ item.image }}" alt="{{ item.name }}"
+                style="max-height: 100px; 
+                  width: auto ; height: auto ; display: block ; object-fit: contain ; margin: 0px ; padding: 0 ; vertical-align: middle ;" />
+            <div class="tooltip-text">
+              <strong>{{ item.name }}</strong>  <!-- Title -->
+              <p>{{ line }}</p>  <!-- Description -->
+            </div>
           </a>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const links = document.querySelectorAll('a.tooltip-container');
+              
+              links.forEach(link => {
+                fetch(link.href, { method: 'HEAD' })
+                  .then(response => {
+                    if (!response.ok) {
+                      // If the link is broken (e.g., returns 404), disable the link but keep the tooltip active
+                      link.setAttribute('href', '#');
+                      // link.style.opacity = '0.5'; // Visual cue for invalid link
+                      // link.style.pointerEvents = 'none'; // Disable clicking
+                    }
+                  })
+                  .catch(() => {
+                    // If there was an error (network issue or invalid link), disable the link
+                    link.setAttribute('href', '#');
+                    // link.style.opacity = '0.5'; // Visual cue for invalid link
+                    // link.style.pointerEvents = 'none'; // Disable clicking
+                  });
+              });
+            });
+          </script>
         {% endfor %}
       </div>
     </div>
