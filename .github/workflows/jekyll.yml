@@ -57,8 +57,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         
-      - name: Generate filesystem tree
-        run: sudo apt install tree && tree && echo && echo "$(cat _config.yml)"
+      - name: Checking config...
+        run: echo "$(cat _config.yml)"
 
   deploy:
     environment:
