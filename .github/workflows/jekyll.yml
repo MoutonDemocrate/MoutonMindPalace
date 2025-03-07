@@ -56,6 +56,9 @@ jobs:
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
+        
+      - name: Generate filesystem tree
+        uses: sudo apt install tree && tree
 
   deploy:
     environment:
