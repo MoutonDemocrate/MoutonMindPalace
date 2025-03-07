@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: lts/*
       - name: Cleaning
-        run: rm -rF _site/
+        run: rm -rf _site/
       - name: Build Assets
         run: npm i && npm run build
       - name: Setup Pages
