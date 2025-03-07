@@ -4,6 +4,8 @@ title: "Hyper Light Drifter :: Moribundity :: The Concept of Life"
 toc: true
 tags: [death]
 categories: [game, essay]
+image:
+  path: /assets/img/covers/hyper_light_drifter.jpg
 ---
 
 **Hyper Light Drifter** is a game released in 2016 by Heart Machine. It follows a character called "The Drifter", who explores a ruined land seeking a cure for its disease.
