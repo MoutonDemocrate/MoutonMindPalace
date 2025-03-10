@@ -13,13 +13,16 @@
     border-radius: 5px;
     position: absolute;
     bottom: 120%; /* Positions tooltip above */
-    left: 50%;
+    left : 50%;
     transform: translateX(-50%);
     white-space: normal;
     opacity: 0;
     width: 200px; /* Adjust width for better formatting */
     transition: opacity 0.3s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+    backdrop-filter: blur(8px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Ensures compatibility with Safari */
   }
 
   .tooltip-container:hover .tooltip-text {
@@ -39,8 +42,6 @@
   }
 </style>
 
-<h2>Tierlist!</h2>
-
 <div class="tier-list" style="border-radius: 10px; padding: 10px; background-color: black;">
   {% assign tiers = "S,A,B,C,D,E,F" | split: "," %}
   {% assign tier_colors = "S|#00FF88,A|#9c01ec,B|#6e02a4,C|#360151,D|#230035,E|#13001d,F|#000000" | split: "," %}
@@ -54,26 +55,22 @@
         {% assign color = key_value[1] %}
       {% endif %}
     {% endfor %}
-    <div class="tier {{ tier }}" style="display: flex; align-items: center; padding: 10px; font-size: 24px; font-weight: bold; text-transform: uppercase; border-radius: 5px; background-color: {{ color }};">
+    <div class="tier {{ tier }}" style="display: flex; align-items: center; padding: 10px; font-size: 24px; font-weight: bold; border-radius: 5px; background-color: {{ color }};">
       {% assign label_col = label_color | where_exp: "item", "item contains tier" | first | split: "|" | last %}
       <div class="tier-label" style="width: 50px; text-align: center; padding: 10px; margin-right: 10px; color: {{ label_col }};">
         {{ tier }}
       </div>
-      <div class="tier-items" style="display: flex; align-content: space-evenly; flex-wrap: wrap; align-items: center; border-radius: 5px; gap: 5px; padding: 10px; background-color: #000000;flex-grow: 1; width: 100%;">
+      <div class="tier-items" style="display: flex; align-content: left; justify-content: space-evenly; flex-wrap: wrap; align-items: center; border-radius: 5px; padding: 10px; gap: 5px; background-color: #000000;flex-grow: 1; width: 100%;">
         {% for item in tier_list[tier] %}
-          {% comment %} <a href="{{ item.link }}" class="tooltip-container" style="position: relative;display: inline-block; align-items: center; border: 2px solid {{ color }}; border-radius: 5px ;">
-            <img src="{{ item.image }}" alt="{{ item.name }}"
+          {% assign formatted_name = item.name | downcase | replace: ' : ', '_' | replace: ' ', '_' %}
+          {% assign image_path = "/assets/img/covers/" | append: formatted_name | append: ".jpg" %}
+          <a href="javascript:void(0);" class="tooltip-container" onclick="showCard('{{ item.name }}', '{{ image_path }}', `{{ item.desc | escape }}`)" style="position: relative;">
+            <img src="{{ image_path }}" class="tooltip-container" alt="{{ item.name }}"
                 style="max-height: 100px; 
                   width: auto ; height: auto ; display: block ; object-fit: contain ; margin: 0px ; padding: 0 ; vertical-align: middle ;" />
-            <span class="tooltip-text">{{ item.name }}</span>
-          </a> {% endcomment %}
-          <a href="{{ item.link }}" class="tooltip-container">
-            <img src="{{ item.image }}" alt="{{ item.name }}"
-                style="max-height: 100px; 
-                  width: auto ; height: auto ; display: block ; object-fit: contain ; margin: 0px ; padding: 0 ; vertical-align: middle ;" />
-            <div class="tooltip-text">
+            <div class="tooltip-text" style="z-index : 9999;">
               <strong>{{ item.name }}</strong>  <!-- Title -->
-              <p>{{ line }}</p>  <!-- Description -->
+              <p style="white-space: pre-line;">{{ item.desc }}</p>  <!-- Description -->
             </div>
           </a>
           <script>
@@ -98,9 +95,158 @@
                   });
               });
             });
+
+            document.addEventListener("DOMContentLoaded", function() {
+              const tooltips = document.querySelectorAll(".tooltip-container");
+
+              tooltips.forEach(container => {
+                const tooltip = container.querySelector(".tooltip-text");
+
+                container.addEventListener("mouseenter", function() {
+                  // Reset tooltip position to default before recalculating
+                  tooltip.style.top = "auto";
+                  tooltip.style.bottom = "120%";
+
+                  // Force reflow to update tooltip's dimensions
+                  tooltip.offsetHeight;
+
+                  requestAnimationFrame(() => {
+                    let imageRect = this.getBoundingClientRect();
+                    let tooltipRect = tooltip.getBoundingClientRect();
+                    let spaceAbove = imageRect.top;
+                    let spaceBelow = window.innerHeight - imageRect.bottom;
+                    let spaceLeft = imageRect.left;
+                    let spaceRight = window.innerWidth - imageRect.right;
+                    let height = tooltipRect.height;
+                    let width = tooltipRect.width;
+
+                    let usedSpace = spaceAbove;
+
+                    console.log(`Space Above: ${spaceAbove}, Space Below: ${spaceBelow}, Tooltip Height: ${tooltipRect.height}`);
+                    console.log(`Space Left: ${spaceLeft}, Space Right: ${spaceRight}, Tooltip Width: ${tooltipRect.width}`);
+                    // Adjust the tooltip based on available space
+                    if (spaceAbove < spaceBelow) {
+                      // If more space above, show tooltip upwards
+                      tooltip.style.bottom = "auto";
+                      tooltip.style.top = "120%";
+                      usedSpace = spaceBelow;
+                    }
+
+                    // if (usedSpace <= height) {
+                    //   // Try to adjust width if necessary, ensuring it stays within the viewport
+                    //   let availableWidth = window.innerWidth - 40; // 20px margin for safety
+                    //   tooltip.style.width = `${availableWidth}px`;  // Ensure tooltip width fits within the viewport
+
+                    //   let tooltipRect = tooltip.getBoundingClientRect();
+                    //   // Prevent tooltip from overflowing to the right side
+                    //   if (imageRect.left + tooltipRect.width > window.innerWidth) {
+                    //     tooltip.style.left = "auto";
+                    //     tooltip.style.right = "0"; // Align tooltip to the right side of the image
+                    //   }
+
+                    //   // Prevent tooltip from overflowing to the left side
+                    //   if (imageRect.left < tooltipRect.width) {
+                    //     tooltip.style.left = "0"; // Align tooltip to the left side of the image
+                    //     tooltip.style.right = "auto";
+                    //   }
+                    // }
+                  });
+                });
+              });
+            });
+
+
+
           </script>
         {% endfor %}
       </div>
     </div>
   {% endfor %}
 </div>
+
+<!-- Pop-up Card -->
+<div id="game-card" class="game-card" style="display: none;">
+  <div class="game-card-content">
+    <img id="game-card-img" src="" alt="Game Image" />
+    <h2 id="game-card-title"></h2>
+    <p id="game-card-desc"></p>
+  </div>
+</div>
+
+<style>
+  .game-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px; /* Spacing for smaller screens */
+    overflow: hidden; /* Prevents overflow outside the window */
+    
+    backdrop-filter: blur(4px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(4px); /* Ensures compatibility with Safari */
+  }
+
+  .game-card-content {
+    background: #2300358f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px; /* Maximum width */
+    max-height: 90vh; /* Ensures the card doesn't exceed the viewport height */
+    overflow-y: auto; /* Allows vertical scrolling if the content is too tall */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content aligns at the top */
+    
+    backdrop-filter: blur(8px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Ensures compatibility with Safari */
+  }
+
+  .game-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .game-card-content {
+      width: 95%; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding for compact fit */
+    }
+
+    .close-btn {
+      font-size: 24px; /* Slightly larger for easier tapping */
+    }
+  }
+</style>
+
+<script>
+  function showCard(name, imgSrc, desc) {
+    document.getElementById("game-card-title").textContent = name;
+    document.getElementById("game-card-img").src = imgSrc;
+    document.getElementById("game-card-desc").textContent = desc;
+    document.getElementById("game-card").style.display = "flex";
+  }
+
+  function closeCard() {
+    document.getElementById("game-card").style.display = "none";
+  }
+
+  // Close when clicking outside the card
+  document.addEventListener("click", function(event) {
+    let card = document.getElementById("game-card-content");
+    if (event.target.id === "game-card") {
+      closeCard();
+    }
+  });
+</script>

@@ -14,6 +14,7 @@ tabs:
   categories: Categories
   tags: Tags
   archives: Archives
+  tierlist: Tierlist
   about: About
 
 # the text displayed in the search bar & search results
@@ -31,14 +32,13 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: This post is licensed under :LICENSE_NAME by the author.
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    name: WTFPL
+    link: https://en.wikipedia.org/wiki/WTFPL
 
   # Displayed in the footer
-  brief: Some rights reserved.
+  brief: No rights reserved.
   verbose: >-
-    Except where otherwise noted, the blog posts on this site are licensed
-    under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
+    These posts have no copyright. Do whatever you want. If you're nice, you can cite the source though.
 
 meta: Using the :THEME theme for :PLATFORM.
 

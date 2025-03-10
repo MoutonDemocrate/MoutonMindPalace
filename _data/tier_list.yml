@@ -1,22 +1,92 @@
 S:
+  - name: "Hollow Knight"
+    desc: "My favourite video game.\n
+    This shit is the bee knee's and I don't fuck around with those words.\n
+    Ambience, exploration, gameplay, story, soundtrack - this game has it all."
+
+  - name: "Super Mario Galaxy"
+    desc: "My second favourite favourite video game.\n
+    Level design ? Yes, of course. Soundtrack ? Fucking amazing. Ambience ? Probably the best in any game I've played.\n
+    This shit rocks."
+
   - name: "Outer Wilds"
-    image: "/assets/img/covers/outer_wilds.jpg"
-    link: "./posts/Outer_Wilds"
     desc: "A knowledge-based puzzle game - any spoilers can ruin the experience PERMANENTLY.\n
     Helped me abstract the concept of death.\n
     10/10"
+
   - name: "Hyper Light Drifter"
-    image: "/assets/img/covers/hyper_light_drifter.jpg"
-    link: "./posts/Hyper_Light_Drifter"
+    desc: "A fast-paced 2D RPG.\n
+    A masterpiece in level design, ambience, and world building, all packed in a short playthrough."
+
+  - name: "Zelda : Twilight Princess"
+    desc: "The first Zelda game that really impacted me.\n
+    It lacks in a lot of area, but makes up for it with incredible ambience, and an immersive story and universe."
+
+  - name: "Splatoon 2 : Octo Expansion"
+    desc: "The best content in the Splatoon series, and the only reason anyone would buy Splatoon 2 now.\n
+    The vaporwave aesthetic is exquisite, excellent level design and gameplay."
+
 
 A:
+  - name: "Bloodborne"
+    desc: "My favourite Soulslike game..\n
+    I really like the aesthetic of this game. The combat feels good and the lore is great. But the Lovecraftian horror is what brings it up so much."
+
+  - name: "Tunic"
+    desc: "Another knowledge-based puzzle game with quick combat gameplay.\n
+    Tunic is great - from the art style to the puzzles. It's a really nice experience that's 10 times deeper than what it appears."
+
+  - name: "Zelda : Breath of the Wild"
+    desc: "Looking at it objectively, probably the best 3D Zelda game.\n
+    While the world can feel a bit empty, and the UI is definitely not the best, the game's atmosphere and terrain are god damn marvelous, and the world building is quite good as well."
+
+  - name: "Splatoon 3"
+    desc: "Octo Expansion's formula, revisited with incredible art direction and soundtrack - not uncommon for Splatoon games.\n
+    It does lack a bit in inovation compared to Octo Expansion, but the realisation is perfect, so who can complain.\n"
+
+  - name: "Titanfall 2"
+    desc: "The pinnacle of FPS campaigns, for 3€.\n
+    Although quite short, the campaign is great - incredible gameplay, environnements, and level design."
 
 B:
+  - name: "Zelda : Tears of the Kingdom"
+    desc: "Not to be an asshole or anything, but despite being good, this game feels like it was made by the executives who wanted Breath of the Wild 2.\n
+    The game is great, but it's just Breath of the Wild again, and the additions do not make up for how dissapointingly mild the game was."
+
+  - name: "Splatoon"
+    desc: "The start of a great saga with a great gameplay foundation.\n
+    Some of the best level design I have witnessed, with insane soundtrack and world building.\n
+    I wish it hadn't held back on art direction. It looks almost neutered compared to other games in the series."
+
+  - name: "Super Mario Galaxy 2"
+    desc: "Not what I wanted for a second installment in the series...\n
+    Ambience got gutted in favor of better levels, and while the soundtrack is good, it's very underutilised and sometimes even just not used correctly."
+
+  - name: "Celeste"
+    desc: "Good soundtrack, good level design & gameplay, not much else to say.\n
+    Celeste is just... a great game. But that's it. It's pretty but never gorgeous, fun but never exhilarating, it's just a solid, great game."
 
 C:
+  - name: "Splatoon 2"
+    desc: "A good game, but dissapointing compared to Splatoon 1 & 3.\n
+    What it lacks in freshness or inventive gameplay, it makes up for with great level design.\n
+    It's just dissapointing and doesn't really expand on Splatoon 1's campaign."
+
+  - name: "Dauntless"
+    desc: "(Talking about the game before The Incident).\n
+    Very fun monster hunting game more focused on learning enemy paterns than anything else.\n
+    Art direction was good, monsters were nice and gameplay was fluid. I'll miss those nights of hiding the Switch in my room to play Dauntless until 3am..."
 
 D:
+  - name: "Starbound"
+    desc: "Once a great game that could've been an excellent game but ended up a good game.\n
+    Starbound's beta was better than the final game we have today.\n
+    Chucklefish abandonned it and although the modding community is one of the best in history, the game is just... not great. Not bad, but not great."
+
 
 E:
 
 F:
+  - name: "Dauntless : Awakening"
+    desc: "Oh, how deep fall those who once soared high...\n
+    Whodda thunk that getting bought by a crypto company would ruin a game ! There's nothing left : monster intelligence was gutted, performance worsened and art direction was neutered. And you have to pay for weapons instead of crafting them from monster parts...\n I'll miss you, buddy."

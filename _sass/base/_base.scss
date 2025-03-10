@@ -44,6 +44,11 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: v.$font-family-base;
+  text-shadow: glow(#00ff88, 15px);
+}
+
+body strong {
+  color: var(--text-color-strong);
 }
 
 h1.dynamic-title {

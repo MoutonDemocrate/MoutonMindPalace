@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Hyper Light Drifter :: Moribundity :: The Concept of Life"
+title: "Hyper Light Drifter :: Moribundity :: Living while aware of Death"
 toc: true
 tags: [death]
-categories: [game, essay]
+categories: [essay]
 image:
   path: /assets/img/covers/hyper_light_drifter.jpg
 ---
