@@ -60,19 +60,20 @@
       <div class="tier-label" style="width: 50px; text-align: center; padding: 10px; margin-right: 10px; color: {{ label_col }};">
         {{ tier }}
       </div>
-      <div class="tier-items" style="display: flex; align-content: left; justify-content: space-evenly; flex-wrap: wrap; align-items: center; border-radius: 5px; padding: 10px; gap: 5px; background-color: #000000;flex-grow: 1; width: 100%;">
+      <div class="tier-items" style="display: flex; align-content: left; justify-content: space-evenly; flex-wrap: wrap; align-items: center; border-radius: 5px; padding: 10px; gap: 10px; background-color: #000000;flex-grow: 1; width: 100%;">
         {% for item in tier_list[tier] %}
           {% assign formatted_name = item.name | downcase | replace: ' : ', '_' | replace: ' ', '_' %}
           {% assign image_path = "/assets/img/covers/" | append: formatted_name | append: ".jpg" %}
-          <a href="javascript:void(0);" class="tooltip-container" onclick="showCard('{{ item.name }}', '{{ image_path }}', `{{ item.desc | escape }}`)" style="position: relative;">
+          <div class="tooltip-container" onclick="showCard('{{ item.name }}', '{{ image_path }}', `{{ item.desc | escape }}`)" style="position: relative;">
             <img src="{{ image_path }}" class="tooltip-container" alt="{{ item.name }}"
                 style="max-height: 100px; 
                   width: auto ; height: auto ; display: block ; object-fit: contain ; margin: 0px ; padding: 0 ; vertical-align: middle ;" />
             <div class="tooltip-text" style="z-index : 9999;">
               <strong>{{ item.name }}</strong>  <!-- Title -->
               <p style="white-space: pre-line;">{{ item.desc }}</p>  <!-- Description -->
+              <a href="{{ site.data.baseurl }}/posts/{{ formatted_name }}" class="button"></a>
             </div>
-          </a>
+          </div>
           <script>
             document.addEventListener('DOMContentLoaded', function() {
               const links = document.querySelectorAll('a.tooltip-container');

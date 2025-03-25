@@ -44,23 +44,46 @@ A:
     desc: "Octo Expansion's formula, revisited with incredible art direction and soundtrack - not uncommon for Splatoon games.\n
     It does lack a bit in inovation compared to Octo Expansion, but the realisation is perfect, so who can complain.\n"
 
+  - name: "Ultrakill"
+    desc: "Dopamine in a box. Jesus Christ this game spikes my adrenaline levels.\n
+    Genuinely good gameplay and level design. Incredible soundtrack.\n
+    HUMANITY IS DEAD. BLOOD IS FUEL. HELL IS FULL."
+
   - name: "Titanfall 2"
-    desc: "The pinnacle of FPS campaigns, for 3€.\n
+    desc: "The pinnacle of FPS cinematic single-player campaigns, for 3€.\n
     Although quite short, the campaign is great - incredible gameplay, environnements, and level design."
+
+  - name: "Bomb Rush Cyberfunk"
+    desc: "Gets a pass straight to A Tier just for reviving the Jet Set Radio fanbase.\n
+    Funky beats, great parkour/tricks gameplay, and a story this time (although not very developped...)"
+
 
 B:
   - name: "Zelda : Tears of the Kingdom"
     desc: "Not to be an asshole or anything, but despite being good, this game feels like it was made by the executives who wanted Breath of the Wild 2.\n
     The game is great, but it's just Breath of the Wild again, and the additions do not make up for how dissapointingly mild the game was."
 
+  - name: "Risk of Rain 2"
+    desc: "The best 3D roguelite out there.\n
+    Ignoring the dissapointing updates from Gearbox, the game's ambience, gameplay and music makes it so that every run feels different, but part of a coherent whole. It's great.\n
+    Mods are also great. Everything Gearbox touches turns to coal."
+
   - name: "Splatoon"
     desc: "The start of a great saga with a great gameplay foundation.\n
     Some of the best level design I have witnessed, with insane soundtrack and world building.\n
     I wish it hadn't held back on art direction. It looks almost neutered compared to other games in the series."
 
+  - name: "Jet Set Radio Future"
+    desc: "Jet Set Radio but with good gameplay this time.\n
+    Story is still... non-existent, but the vibe is clearer now. The funky beats are also way better, in my opinion."
+
   - name: "Super Mario Galaxy 2"
     desc: "Not what I wanted for a second installment in the series...\n
     Ambience got gutted in favor of better levels, and while the soundtrack is good, it's very underutilised and sometimes even just not used correctly."
+
+  - name: "Hades"
+    desc: "A great game all around! But makes poor use of its roguelite elements.\n
+    The game is pretty, characters are hot, gameplay is fun and story is complex and interesting. It's just a shame the game's so... repetitive."
 
   - name: "Celeste"
     desc: "Good soundtrack, good level design & gameplay, not much else to say.\n
@@ -77,7 +100,16 @@ C:
     Very fun monster hunting game more focused on learning enemy paterns than anything else.\n
     Art direction was good, monsters were nice and gameplay was fluid. I'll miss those nights of hiding the Switch in my room to play Dauntless until 3am..."
 
+  - name: "Jet Set Radio"
+    desc: "Gameplay and story aren't that great if I'm honest.\n
+    But this game started an entire new genre of music and art, so I don't really mind. It's... an experience."
+
 D:
+  - name: "The Low Road"
+    desc: "A good little adventure, but very short, with very few complex puzzles.\n
+    The story is nice, but never really gets super interesting or anything.\n
+    In my opinion, the game had more potential than what it ended up being."
+
   - name: "Starbound"
     desc: "Once a great game that could've been an excellent game but ended up a good game.\n
     Starbound's beta was better than the final game we have today.\n

@@ -6,6 +6,7 @@ tags: [death]
 categories: [essay]
 image:
   path: /assets/img/covers/hyper_light_drifter.jpg
+permalink: Hyper_Light_Drifter
 ---
 
 **Hyper Light Drifter** is a game released in 2016 by Heart Machine. It follows a character called "The Drifter", who explores a ruined land seeking a cure for its disease.
@@ -20,7 +21,7 @@ The game really captivated me with it's environmental storytelling. The characte
 
 ## Meaning behind the game
 
-During my first three playthroughs, it didn't really occur to me that the game might hide a deeper meaning behind it. I mean, sure, there was clearly hidden lore and a lot more to discover, but usually back then I didn't care for that kind of stuff - I could just watch a 2 hour long lore video from some guy to catch up on that.  I thought this was just a video game, and nothing more.
+During my first three playthroughs, it didn't really occur to me that the game might hide a deeper meaning behind it. I mean, sure, there was clearly hidden lore and a lot more to discover, but usually back then I didn't care for that kind of stuff - I could just watch a 2 hour long lore video from some guy to catch up on that. I thought this was just a video game, and nothing more.
 
 A few weeks after my third playthrough, I randomly stumbled upon the Hyper Light Drifter subreddit. I just browsed the fanart for a bit and found a post asking about a certain Alx Preston's whereabouts. I looked his name up on Google, realised that he was the man behind Heart Machine, and read the post. In there, I learned something that changed my opinion of Hyper Light Drifter from a pretty cool game that was pretty fun, to a masterpiece.
 

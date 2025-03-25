@@ -84,7 +84,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
-  text-shadow: glow(#00ff88, 15px);
+  text-shadow: #00ff88 1px 0 15px;
 }
 
 /* --- Typography --- */
@@ -92,7 +92,7 @@ body {
 @for $i from 1 through 5 {
   h#{$i} {
     @extend %heading;
-    text-shadow: glow(#00ff88, 15px), glow(#00ff88, 20px), glow(#00ff88, 25px);
+    text-shadow: #00ff88 1px 0 15px, #00ff88 1px 0 20px, #00ff88 1px 0 25px;
 
     @if $i > 1 {
       @extend %anchor;
