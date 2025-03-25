@@ -12,11 +12,17 @@ S:
   - name: "Outer Wilds"
     desc: "A knowledge-based puzzle game - any spoilers can ruin the experience PERMANENTLY.\n
     Helped me abstract the concept of death.\n
-    10/10"
+    In my opinion, this is probably the best game ever made."
 
   - name: "Hyper Light Drifter"
     desc: "A fast-paced 2D RPG.\n
-    A masterpiece in level design, ambience, and world building, all packed in a short playthrough."
+    A masterpiece in level design, ambience, and world building, all packed in a short playthrough.\n
+    I cannot put into words how good the game is. Play it."
+
+  - name: "The Stanley Parable"
+    desc: "Who doesn't love this game.\n
+    The very concept is already very cool, but it actually makes use of it ??? Correctly ????\n
+    Always funny to force people to play through the game, just to see what they'll do."
 
   - name: "Zelda : Twilight Princess"
     desc: "The first Zelda game that really impacted me.\n
@@ -26,8 +32,17 @@ S:
     desc: "The best content in the Splatoon series, and the only reason anyone would buy Splatoon 2 now.\n
     The vaporwave aesthetic is exquisite, excellent level design and gameplay."
 
+  - name: "Warframe"
+    desc: "In a nutshell : the blueprint by which every free game should build itself.\n
+    No content behind paywalls, battlepass is free, premium currency is tradeable so very very few things are paywalled, and all of those are cosmetics.\n
+    The devs love the community and interact with it a lot. It's great."
 
 A:
+  - name: "Outer Wilds : Echoes of the Eye"
+    desc: "The DLC is great! It's still really in the same vibe as the base game.\n
+    But in my opinion, the DLC could've been *better*. And that's my only problem with it.\n
+    It's still like, one of the best pieces of content in a video game ever, so I forgive <3"
+
   - name: "Bloodborne"
     desc: "My favourite Soulslike game..\n
     I really like the aesthetic of this game. The combat feels good and the lore is great. But the Lovecraftian horror is what brings it up so much."
@@ -44,6 +59,11 @@ A:
     desc: "Octo Expansion's formula, revisited with incredible art direction and soundtrack - not uncommon for Splatoon games.\n
     It does lack a bit in inovation compared to Octo Expansion, but the realisation is perfect, so who can complain.\n"
 
+  - name: "Little Nightmares 2"
+    desc: "The second installment is better than the first ! Improvement is a scarce quality in modern game studios...\n
+    Level design is better, environnements improved and are more diverse.\n
+    Cinematically, even better than the first. And the bad guys are even scarier."
+
   - name: "Ultrakill"
     desc: "Dopamine in a box. Jesus Christ this game spikes my adrenaline levels.\n
     Genuinely good gameplay and level design. Incredible soundtrack.\n
@@ -56,6 +76,11 @@ A:
   - name: "Bomb Rush Cyberfunk"
     desc: "Gets a pass straight to A Tier just for reviving the Jet Set Radio fanbase.\n
     Funky beats, great parkour/tricks gameplay, and a story this time (although not very developped...)"
+
+  - name: "Little Nightmares"
+    desc: "The first installment of my favourite horror game series.\n
+    Damn, the ambience in the game is HEAVY. This shit makes me shiver me timbers without any jumpscares.\n
+    Also, cinematically and environnementally, insane game."
 
 
 B:
@@ -85,6 +110,12 @@ B:
     desc: "A great game all around! But makes poor use of its roguelite elements.\n
     The game is pretty, characters are hot, gameplay is fun and story is complex and interesting. It's just a shame the game's so... repetitive."
 
+  - name: "Enter the Gungeon"
+    desc: "Probably my favourite 2D roguelite.\n
+    Art direction is crazy, gameplay's insane and soundtrack is a banger.\n
+    Every run is really different, and since most items are references, it's really fun if you're a huge nerd.\n
+    Minus points for being a \"wiki opened\" kinda game."
+
   - name: "Celeste"
     desc: "Good soundtrack, good level design & gameplay, not much else to say.\n
     Celeste is just... a great game. But that's it. It's pretty but never gorgeous, fun but never exhilarating, it's just a solid, great game."
@@ -100,15 +131,32 @@ C:
     Very fun monster hunting game more focused on learning enemy paterns than anything else.\n
     Art direction was good, monsters were nice and gameplay was fluid. I'll miss those nights of hiding the Switch in my room to play Dauntless until 3am..."
 
+  - name: "Superliminal"
+    desc: "Trippy fucking game.\n
+    The story's nice, but doesn't go far.\n
+    Makes nice use of its mechanics, but never really expands too much.\n
+    Definitely an experience, but not really life changing or anything.\n
+    The redeeming quality is that conceptual representation is always cool."
+
   - name: "Jet Set Radio"
     desc: "Gameplay and story aren't that great if I'm honest.\n
     But this game started an entire new genre of music and art, so I don't really mind. It's... an experience."
+
+  - name: "Control"
+    desc: "Great gameplay and environnements, but poor level design and story.\n
+    I really loved the art direction for the environnements, and the themes of the game.\n
+    But somehow, every bit of gameplay felt... restrained by the game's level degign, which is the opposite of what it should be..."
 
 D:
   - name: "The Low Road"
     desc: "A good little adventure, but very short, with very few complex puzzles.\n
     The story is nice, but never really gets super interesting or anything.\n
     In my opinion, the game had more potential than what it ended up being."
+
+  - name: "SLUDGE LIFE 2"
+    desc: "A nice little game, 100% finishable in like, less than 5 hours.\n
+    The art direction is cool, but you can quickly get bored of it.\n
+    Humor's nice, and message is kinda good ? But that's it."
 
   - name: "Starbound"
     desc: "Once a great game that could've been an excellent game but ended up a good game.\n
@@ -117,6 +165,10 @@ D:
 
 
 E:
+  - name: "Super Smash Bros. Ultimate"
+    desc: "(SINGLEPLAYER WISE)\nI don't know. I expected something... More. 
+    The only interesting part of the singleplayer was the map ? And that's pretty bad.\n
+    This singleplayer basically only has value for people who already are fans of the base game."
 
 F:
   - name: "Dauntless : Awakening"

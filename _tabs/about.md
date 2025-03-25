@@ -3,6 +3,7 @@
 icon: fas fa-info-circle
 order: 5
 mermaid: true
+refactor: true
 ---
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
@@ -92,10 +93,10 @@ Moon
 ## Tables
 
 | Company                      | Contact          | Country |
-|:---------------------------- |:---------------- | -------:|
+| :--------------------------- | :--------------- | ------: |
 | Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
 
 ## Links
 
@@ -138,7 +139,7 @@ fi;
   "colors/dark-typography";
 ```
 
-{: file='_sass/jekyll-theme-chirpy.scss'}
+{: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ## Mathematics
 
