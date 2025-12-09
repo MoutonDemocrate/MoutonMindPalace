@@ -1,4 +1,9 @@
 S:
+  - name: "Hollow Knight : Silksong"
+    desc: "My favourite video game.\n
+    After a bit of reflection, I can't separate Silksong from Hollow Knight. It's a continuation, it's everything Hollow Knight tried to do and more.\n
+    A masterpiece. Even after 100%, speedrunning, studying it and trying to write an essay on it, I can't fully grasp just how insanely good this game is."
+
   - name: "Hollow Knight"
     desc: "My favourite video game.\n
     This shit is the bee knee's and I don't fuck around with those words.\n
@@ -11,12 +16,12 @@ S:
 
   - name: "Outer Wilds"
     desc: "A knowledge-based puzzle game - any spoilers can ruin the experience PERMANENTLY.\n
-    Helped me abstract the concept of death.\n
+    I can't tell you anything about this game. Just, play it. Whatever it costs, just buy it, and play it, and don't ask questions.\n
     In my opinion, this is probably the best game ever made."
 
   - name: "Hyper Light Drifter"
-    desc: "A fast-paced 2D RPG.\n
-    A masterpiece in level design, ambience, and world building, all packed in a short playthrough.\n
+    desc: "A fast-paced 2D RPG with a lot of exploration and secrets.\n
+    A masterpiece in level design, ambience, and world building, all packed in a short playthrough. How the fuck does this game work with NO LINES OF TEXT (apart from the pause menu) ?\n
     I cannot put into words how good the game is. Play it."
 
   - name: "The Stanley Parable"
@@ -26,11 +31,19 @@ S:
 
   - name: "Zelda : Twilight Princess"
     desc: "The first Zelda game that really impacted me.\n
-    It lacks in a lot of area, but makes up for it with incredible ambience, and an immersive story and universe."
+    It lacks in a lot of area, but makes up for it with incredible ambience, and an immersive story and universe.\n 
+    We've never reached the height of sheer oppressive atmosphere of the Twilight."
 
   - name: "Splatoon 2 : Octo Expansion"
     desc: "The best content in the Splatoon series, and the only reason anyone would buy Splatoon 2 now.\n
-    The vaporwave aesthetic is exquisite, excellent level design and gameplay."
+    The vaporwave aesthetic is exquisite, excellent level design and gameplay. They knew they missed the mark with Splatoon 2's campaign, so... they made up for it.\n
+    And god damn did they succeed."
+
+  - name: "Clair Obscur : Expedition 33"
+    desc: "A very French turn-based RPG with parries.\n
+    This is just Mario & Luigi gameplay with better graphics and more builds. The parries feel so good in that game.\n
+    The music, the art direction, the characters and the plot are on point. Nothing to say there, absolute cinema.\n
+    The only bad part is the open-world / roam gameplay. The scenery is pretty, but there's kinda nothing to do."
 
   - name: "Warframe"
     desc: "In a nutshell : the blueprint by which every free game should build itself.\n
@@ -64,10 +77,17 @@ A:
     Level design is better, environnements improved and are more diverse.\n
     Cinematically, even better than the first. And the bad guys are even scarier."
 
+  - name: "Balatro"
+    desc: "A rogue-lite deckbuilder with jazzy art direction and music.\n
+    This game is addictive. Like, actually addictive.\n
+    It starts pretty simple, but very soon you have hands scoring bajillion chips and thousands of dollards.\n
+    Only one sentence to summarise this game :\n
+    Number Go Up."  
+
   - name: "Ultrakill"
     desc: "Dopamine in a box. Jesus Christ this game spikes my adrenaline levels.\n
     Genuinely good gameplay and level design. Incredible soundtrack.\n
-    HUMANITY IS DEAD. BLOOD IS FUEL. HELL IS FULL."
+    MANKIND IS DEAD. BLOOD IS FUEL. HELL IS FULL."
 
   - name: "Titanfall 2"
     desc: "The pinnacle of FPS cinematic single-player campaigns, for 3€.\n
@@ -105,6 +125,11 @@ B:
   - name: "Super Mario Galaxy 2"
     desc: "Not what I wanted for a second installment in the series...\n
     Ambience got gutted in favor of better levels, and while the soundtrack is good, it's very underutilised and sometimes even just not used correctly."
+
+  - name: "Blue Prince"
+    desc: "A roguelike knowledge-based puzzle game.\n
+    This is the kind of design that really doesn't sound good, but is actually genius in so many ways.\n
+    Pretty fun, insane lore and secrets, and a great artstyle. The design can fail in some aspects, but it's still reaaaaaally good."
 
   - name: "Hades"
     desc: "A great game all around! But makes poor use of its roguelite elements.\n
