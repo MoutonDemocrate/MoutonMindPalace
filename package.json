@@ -44,8 +44,8 @@
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "husky": "^9.1.7",
     "purgecss": "^7.0.2",
-    "rollup": "^4.27.4",
-    "semantic-release": "^24.2.0",
+    "rollup": "^4.53.5",
+    "semantic-release": "^25.0.2",
     "stylelint": "^16.10.0",
     "stylelint-config-standard-scss": "^13.1.0"
   },
