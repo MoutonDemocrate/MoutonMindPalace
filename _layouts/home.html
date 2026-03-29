@@ -27,14 +27,24 @@ endif %} {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
 {% for i in (normal_start..normal_end) %} {% assign posts = posts | push:
 all_normal[i] %} {% endfor %} {% endif %}
 
-<br>
+<br />
 
+
+<!-- Content -->
+<div class="content">
+  {{ content }}
+</div>
+
+<!-- Tierlist -->
 {% comment %} {% include tierlist.html %} {% endcomment %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
   <article class="card-wrapper card">
-    <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
+    <a
+      href="{{ post.url | relative_url }}"
+      class="post-preview row g-0 flex-md-row-reverse"
+    >
       {% assign card_body_col = '12' %} {% if post.image %} {% assign src =
       post.image.path | default: post.image %} {% unless src contains '//' %} {%
       assign src = post.media_subpath | append: '/' | append: src | replace:

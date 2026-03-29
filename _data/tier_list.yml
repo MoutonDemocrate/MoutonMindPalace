@@ -86,6 +86,16 @@ A:
     Level design is better, environnements improved and are more diverse.\n
     Cinematically, even better than the first. And the bad guys are even scarier."
 
+  - name: "Blue Prince"
+    desc: "A roguelike knowledge-based puzzle game.\n
+    This is the kind of design that really doesn't sound good, but is actually genius in so many ways.\n
+    Pretty fun, insane lore and secrets, and a great artstyle. The design fails in some aspects (like rewarding the player) but it's still reaaaaaally good."
+
+  - name: "Hades 2"
+    desc: "Well, shit. I can't complain anymore.\n
+    My main complaint with Hades was the underdeveloped roguelite aspect of it. Hades 2 is both more and less of a roguelite, and I feel like this is exactly what the game was supposed to be.\n
+    I still play this game like a dating sim. Icarus is adorable."
+
   - name: "Balatro"
     desc: "A rogue-lite deckbuilder with jazzy art direction and music.\n
     This game is addictive. Like, actually addictive.\n
@@ -142,10 +152,10 @@ B:
     desc: "Not what I wanted for a second installment in the series...\n
     Ambience got gutted in favor of better levels, and while the soundtrack is good, it's very underutilised and sometimes even just not used correctly."
 
-  - name: "Blue Prince"
-    desc: "A roguelike knowledge-based puzzle game.\n
-    This is the kind of design that really doesn't sound good, but is actually genius in so many ways.\n
-    Pretty fun, insane lore and secrets, and a great artstyle. The design can fail in some aspects, but it's still reaaaaaally good."
+  - name: "Pacific Drive"
+    desc: "An open-world survival horror roguelite car game. Yeah, all of those things.\n
+    Well, kinda. Pacific Drive is a masterclass on manipulating ambience and vibes to push the player further on.
+    Excellent rendition of the environment : this game made me feel nostalgia for a place I never visited, and a time I never even knew."
 
   - name: "Hades"
     desc: "A great game all around! But makes poor use of its roguelite elements.\n
@@ -166,6 +176,11 @@ C:
     desc: "Not to be an asshole or anything, this game feels like it was made by the executives who wanted Breath of the Wild 2.\n
     The game is okay, but it's just Breath of the Wild again, and the additions do not make up for how dissapointingly mild the game was."
 
+  - name: "Evil Egg"
+    desc: "An arcade shooter with arguably too much bitcrush.\n
+    Game feels good, sound work is great. This isn't a big project, and it's not supposed to be anything huge, and it just... works."
+
+
   - name: "Splatoon 2"
     desc: "A good game, but dissapointing compared to Splatoon 1 & 3.\n
     What it lacks in freshness or inventive gameplay, it makes up for with great level design.\n
@@ -175,6 +190,10 @@ C:
     desc: "(Talking about the game before The Incident).\n
     Very fun monster hunting game more focused on learning enemy paterns than anything else.\n
     Art direction was good, monsters were nice and gameplay was fluid. I'll miss those nights of hiding the Switch in my room to play Dauntless until 3am..."
+
+  - name: "Hyper Demon"
+    desc: "This game cannot be accurately described. It is pure experience.\n
+    I still don't understand how this game works, on a design level. Play it once, you'll see."
 
   - name: "Superliminal"
     desc: "Trippy fucking game.\n
@@ -204,9 +223,9 @@ D:
     Humor's nice, and message is kinda good ? But that's it."
 
   - name: "Starbound"
-    desc: "Once a great game that could've been an excellent game but ended up a good game.\n
+    desc: "A great game that could've been an excellent game but ended up a good game.\n
     Starbound's beta was better than the final game we have today.\n
-    Chucklefish abandonned it and although the modding community is one of the best in history, the game is just... not great. Not bad, but not great."
+    Chucklefish abandonned it and although the modding community is one of the best in history, the game is just... not great. Not bad, but not great like it could've been."
 
 
 E:
@@ -214,6 +233,12 @@ E:
     desc: "(SINGLEPLAYER WISE)\nI don't know. I expected something... More. 
     The only interesting part of the singleplayer was the map ? And that's pretty bad.\n
     This singleplayer basically only has value for people who already are fans of the base game."
+
+  - name: "Hyper Light Breaker"
+    desc: "Sequel to the famed Hyper Light Drifter,\n
+    Breaker seeked to turn the game's world and ambience into a 3D open-world roguelite.\n
+    The game is actually quite fun, good looking, and with good asseting now, despite its terrible release.
+    But, the producers have decided to end development, so this game will forever be nothing more than waster potential."
 
 F:
   - name: "Dauntless : Awakening"

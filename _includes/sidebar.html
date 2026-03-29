@@ -100,3 +100,14 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const vcrToggle = document.getElementById('vcr-toggle');
+    if (vcrToggle) {
+      vcrToggle.addEventListener('click', function() {
+        document.body.classList.toggle('vcr-off');
+      });
+    }
+  });
+</script>

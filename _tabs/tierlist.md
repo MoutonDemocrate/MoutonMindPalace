@@ -26,4 +26,4 @@ To explain the tiers a bit :
 - ### E Tier
   - Plain bad. Not even bad enough to hate it. Chucked into the void and never brought up again.
 - ### F Tier
-  - Terrible. To the point where I actively hate this piece of media. Would recommend NOT to experience it.
+  - Terrible. To the point where I actively hate this piece of media. Would recommend NOT to experience it. Or maybe I would. But in this case, don't listen to me.
